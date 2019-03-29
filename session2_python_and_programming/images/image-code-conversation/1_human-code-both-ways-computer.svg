@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="522"
+   height="357"
+   viewBox="-0.5 -0.5 522 357"
+   content="&lt;mxfile modified=&quot;2019-03-05T12:21:31.064Z&quot; host=&quot;www.draw.io&quot; agent=&quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0&quot; etag=&quot;YwVXxrZv3LzV6T3tDpwR&quot; version=&quot;10.3.3&quot;&gt;&lt;diagram id=&quot;AkH5RgSlTzcxH6E1aAnw&quot; name=&quot;Page-1&quot;&gt;zVfLctowFP0aljC2BRSWwXnQmaRJJovOdJMRtrAVZF2PLPPo11fGkh/IFNKEtt6Aj66upXOO7rV7yE+2dwKn8QOEhPU8J9z20HXP8zz0xVM/BbIrEXc6GpdIJGiosRp4oT+JBh2N5jQkWStQAjBJ0zYYAOckkC0MCwGbdtgSWPupKY6IBbwEmNnodxrKuEQnI6fG54RGsXmy6+iRBJtgDWQxDmHTgNBND/kCQJb/kq1PWMGe4aWcd3tktFqYIFyeM+HH8+Jq/XjzNhLOw9e3Z3QXvfL+UK9N7syGBeQ8JMUcp4dmIGQMEXDM7gFSBboKfCNS7rRUOJegoFgmTI9mEgt5VVCvgIDhLKOBgW8pM2GELfYRayIkVXwrqFwLCS1F6i1qKINcBDqKrqY5n82X3+bb7DGYRPM83fW9imBlTQIJkWKn5gnCsKTrdn6sLRJVcdXUJ6DqyZ6j/ewa2bWbjbQmg9piRKSeVEuh/jRWUUN7gbrFOr4pz1ljlusdWOoZNu/xgrAnyKikwNXQAqSEpC2Uib1iNCpiZCGw0knAqvK6VyAxTov0yTYqDvmAEcxfE5ymlEcDlWTREK9Dq+IxZNuAbFk0nX3XHZVzNvVRM5THzVPmOMela7H+XorRaYqXwKUPDMT+FjnOeOz7R+k8KQg7GAgUf0TlnmGdpwIa0kEuGeXEr4pecVaX6nA1Fubvr0rRxsh4MnFnSI0oPUNK6u1w4KQBX1OhspfL4kUlOMsenMgNiFU2UHV7pUh4TYMP2kOPonH79PU73DLucgu6lFtMk/rM8nmUqIO6+OnFzTugd3TAWllzreJm5UHD3+e5cJEcWifYV28llk7GtQEWKttsE1NJXlK8byob5eMzRTnfva6ht+HWyaVqW2evR/+s1/9ZY+/cxN9p7NOLefb4pv7vxm4ZvUO+o43dHdrev1hf72R4eprhQzYyRV42yPCSyN2AHxj/oNc6+8vqtbqfntSuWzDrBeAjSugJfdQ2uossYaZTWxiDvUMXdVt/25QHpf5ERDe/AA==&lt;/diagram&gt;&lt;/mxfile&gt;"
+   id="svg66"
+   sodipodi:docname="human-code-both-ways-computer.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata70">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2048"
+     inkscape:window-height="1103"
+     id="namedview68"
+     showgrid="false"
+     inkscape:zoom="1.28"
+     inkscape:cx="147.89475"
+     inkscape:cy="302.70273"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg66"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2" />
+  <rect
+     style="fill:#cccccc;stroke:#000000;stroke-width:4"
+     id="rect24"
+     pointer-events="none"
+     ry="4"
+     rx="4"
+     height="130"
+     width="60"
+     y="100.86358"
+     x="460.39062" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path26"
+     pointer-events="none"
+     stroke-miterlimit="10"
+     d="m 460.39062,122.53358 h 60 m -60,43.33 h 60" />
+  <ellipse
+     style="fill:#ffffff;stroke:none"
+     id="ellipse28"
+     pointer-events="none"
+     ry="4.3333335"
+     rx="4"
+     cy="176.86359"
+     cx="470.39062" />
+  <path
+     style="fill:none;stroke:#000000;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path30"
+     pointer-events="none"
+     stroke-miterlimit="10"
+     d="m 360.39062,165.86358 h 73.63" />
+  <path
+     style="fill:#000000;stroke:#000000;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path32"
+     pointer-events="none"
+     stroke-miterlimit="10"
+     d="m 439.27062,165.86358 -7,3.5 1.75,-3.5 -1.75,-3.5 z" />
+  <path
+     style="fill:#ffffff;stroke:#000000;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path34"
+     pointer-events="none"
+     stroke-miterlimit="10"
+     d="m 290.39062,115.86358 h 50 v 100 h -80 v -70 z" />
+  <g
+     id="g40"
+     transform="translate(284.89062,159.36358)">
+    <switch
+       id="switch38">
+      <foreignObject
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+         height="12"
+         width="30"
+         pointer-events="all"
+         style="overflow:visible;">
+        <xhtml:div
+           style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 31px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <xhtml:div
+             style="display:inline-block;text-align:inherit;text-decoration:inherit;">Code</xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <text
+         style="font-size:12px;font-family:Helvetica;text-anchor:middle;fill:#000000"
+         id="text36"
+         font-size="12px"
+         y="12"
+         x="15">Code</text>
+    </switch>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="11.296875"
+     y="239.95734"
+     id="text1101"><tspan
+       sodipodi:role="line"
+       id="tspan1099"
+       x="11.296875"
+       y="275.34796" /></text>
+  <g
+     id="g1037"
+     transform="translate(137.5,282.03125)">
+    <path
+       id="path942"
+       pointer-events="none"
+       stroke-miterlimit="10"
+       d="m 28.53692,-113.8125 h 67.26"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       id="path944"
+       pointer-events="none"
+       stroke-miterlimit="10"
+       d="m 23.28692,-113.8125 7,-3.5 -1.75,3.5 1.75,3.5 z"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       id="path946"
+       pointer-events="none"
+       stroke-miterlimit="10"
+       d="m 101.04692,-113.8125 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <ellipse
+       id="ellipse948"
+       pointer-events="none"
+       ry="20.202021"
+       rx="20"
+       cy="-143.8125"
+       cx="-22.83308"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <ellipse
+       id="ellipse950"
+       pointer-events="none"
+       ry="4.0404038"
+       rx="4"
+       cy="-149.8125"
+       cx="-29.83308"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <ellipse
+       id="ellipse952"
+       pointer-events="none"
+       ry="4.0404038"
+       rx="4"
+       cy="-149.8125"
+       cx="-15.83308"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <ellipse
+       id="ellipse954"
+       pointer-events="none"
+       ry="5.0505052"
+       rx="10"
+       cy="-134.8125"
+       cx="-22.83308"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <path
+       id="path956"
+       pointer-events="none"
+       stroke-miterlimit="10"
+       d="m -22.83308,-123.4125 v 29.3"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <path
+       id="path958"
+       pointer-events="none"
+       stroke-miterlimit="10"
+       d="m -47.83308,-63.8125 25,-30.3 25,30.3"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <path
+       id="path960"
+       pointer-events="none"
+       stroke-miterlimit="10"
+       d="m -47.83308,-104.2125 5,-5.05 h 40 l 5,-5.06"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  </g>
+</svg>
