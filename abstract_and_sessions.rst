@@ -16,13 +16,16 @@ good, efficient code and which tools to use to organize our data and the code.
 If helpful for understanding the big picture, we will discuss a bit of theory.
 
 Prerequisites:
-- basic understanding of (scripted) programing languages (loops, variables,
-functions, classes, ...)
+
+- basic understanding of (scripted) programing languages (loops, variables, functions, classes, ...)
 - knowledge of basic Python syntax (e.g. implement easy functions, importing
   modules, ...)
 - basic GIT knowledge
 - use of a command line
 
+
+Sessions
+--------
 
 - Organizing code and data: Advanced Git, Github and more
     2019-04-01  9:30 - 12:30
