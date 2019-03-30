@@ -1,5 +1,6 @@
-working tree, working directory
+version control system
 repository
+working tree, working directory
 commit
 commit message
 branch
@@ -19,6 +20,7 @@ staging area, index
 ref, reference
 objects
 merge
+fastforward-merge
 push
 pull
 fetch

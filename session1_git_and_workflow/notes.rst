@@ -1,17 +1,30 @@
 Organizing code and data: Advanced Git, Github and more
 =======================================================
 
+Meta
+----
 - Links
     - Make graphs: https://github.com/deuill/grawkit
     - Slides: https://www.slideshare.net/ThomasRausch4/git-introduction-tutorial
 
+- Prepare Laptop
+    - slides
+    - Vocabulary + commands
+    - github
+        - https://github.com/shoyer
+        - https://github.com/gvanrossum
+    - Style
+        - https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53
+        - https://chris.beams.io/posts/git-commit/
 
-    - Print for overhead projector:
-        - Vocabulary
-        - Basic workflow graph
-        - Commands
-        - cheat sheet
+- Print for overhead projector:
+    - Vocabulary
+    - Basic workflow graph
+    - Commands
+    - cheat sheet
 
+Intro
+-----
 
 - Introduce presenters
     - quick intro of 4 sessions
@@ -19,6 +32,14 @@ Organizing code and data: Advanced Git, Github and more
 
 - Introduction
     - Screenshot of "final.doc"
+        - Why is this a bad example?
+            - somebody working that chaotic can make a GIT repository chaotic too
+            - one person with a completely linear history is
+            - docx does not work well with for diff
+            - in an abstract.docx one might not need the old versions at all
+            - maybe no need to maintain old versions
+            - it is not clear how to split work into single consistent steps
+            - not clear and maybe no need how to describe these steps
 
     - Why?
         - GIT as solution for versioning files
@@ -76,6 +97,7 @@ Organizing code and data: Advanced Git, Github and more
     - staging area in between
 
     - branches: imagine different versions of software
+        - is it dangerous to delete a branch?
 
     - commit, branch, checkout, rebase, cherry-pick, merge
 
@@ -98,6 +120,9 @@ Organizing code and data: Advanced Git, Github and more
 - Excercise: merge conflict
     - create a feature branch
     - create a commit
+
+- Excercise
+    - git rebase -i HEAD~7
 
 
 10:15: Remotes
@@ -125,7 +150,7 @@ Organizing code and data: Advanced Git, Github and more
         - Issues
 
 - forced push: rewriting history on the remote
-
+    - rewrite history: rebase, git commit --amend
     - Golden rule: don't rewrite history after it leaves your machine
         - Exception: you know what you are doing and won't regret if it turns out you actually didn't
         - Exception: feature branches (or branches you own exclusively)
@@ -141,7 +166,6 @@ Organizing code and data: Advanced Git, Github and more
 - Excercise: push to Github
     - Clone the workshop repo with --recursive!
     - git-game
-
 
 
 11:00 Large files and workflow
@@ -183,6 +207,11 @@ Organizing code and data: Advanced Git, Github and more
     - .git
     - config
     - objects: files, commits
+        - git cat -p file COMMIT
+        - git ls-tree COMMIT
+        - commmit: da483
+        - file: 8e8bd5
+          --> cat 8bd5 | pigz -d
     - hashes
     - refs
         - HEAD
