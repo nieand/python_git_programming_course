@@ -6,6 +6,11 @@ Meta
 - Links
     - Make graphs: https://github.com/deuill/grawkit
     - Slides: https://www.slideshare.net/ThomasRausch4/git-introduction-tutorial
+    - How to teach GIT:
+        - https://recompilermag.com/issues/issue-0/bad-metaphors/
+        - https://recompilermag.com/issues/issue-1/how-to-teach-git/
+        - https://software-carpentry.org/blog/2012/12/some-of-the-things-weve-learned-about-teaching-git.html
+        - https://jordankasper.com/lessons-learned-teaching-git/
 
 - Prepare Laptop
     - slides
@@ -17,18 +22,24 @@ Meta
         - https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53
         - https://chris.beams.io/posts/git-commit/
 
+    - Travis-CI
+        - https://travis-ci.org/lumbric/lunchbot/branches
+        - https://github.com/lumbric/lunchbot
+
 - Print for overhead projector:
     - Vocabulary
     - Basic workflow graph
     - Commands
     - cheat sheet
 
+
 Intro
 -----
 
 - Introduce presenters
     - quick intro of 4 sessions
-    - interrupt for questions today
+    - interrupt for questions today & expect participation
+    - quick survey: commands & terms
 
 - Introduction
     - Screenshot of "final.doc"
@@ -41,6 +52,15 @@ Intro
             - it is not clear how to split work into single consistent steps
             - not clear and maybe no need how to describe these steps
 
+    - What is a version control system and why do I need it?
+        - protects yourself and others from yourself and others (backup)
+        - collaboration: work on the same project in a team without need of complicated architecture
+        - don't afraid change: reverting is easy
+        - mark which parts are working and which are broken (stable branch, commits under review etc)
+        - review: split work into readable and consistent parts
+        - apply a fix to multiple maintained branches
+        - develop 5 features and deploy them in arbitrary order to the production system
+
     - Why?
         - GIT as solution for versioning files
             --> split work into steps (commits)
@@ -52,6 +72,9 @@ Intro
         - versions connected via tree-like graph, each node is a commit
         - GIT: think of commit as changes ("patches")
         - Operations: branch, rebase, cherry-pick, sending commits (push/pull)
+        - difference 1 to copying folders: connections (history)
+        - difference 2 to copying folders: operations
+        - difference 3 to copying folders: smaller file size
     - How?
         - command line
         - GUIs, IDE integration
@@ -106,9 +129,15 @@ Intro
 
 - Something went wrong...
   - https://ohshitgit.com/
-  - revert a file in the working tree to the last committed one
-  - edit the last commit (before pushing to remote)
   - git reflog
+
+
+- Some hints:
+    - don't leave comments in the code!
+    - for command line, use a good command completion!
+    - you want to have a tree viewer (terminal or GUI)
+    - many commands can be aborted, like git rebase --abort
+    - git add again after changing a file
 
 
 - Excercise: local repo
@@ -121,16 +150,20 @@ Intro
     - create a feature branch
     - create a commit
 
-- Excercise
-    - git rebase -i HEAD~7
+- Exercise:
+    - clone some open source repository
 
 
 10:15: Remotes
 --------------
 
-- Github
+- Remotes
     - Decentralized version control system
     - What is a remote?
+    - http, ssh, filesystem...
+    - ssh publickeys
+
+- Github
     - git != Github
     - Alternatives: Gitlab, Bitbucket, your own server, local folder and many more
     - Github is your business card!
@@ -144,10 +177,30 @@ Intro
         - Wiki
         - Issue tracker
 
-    - Many things are undeletable
+    - Warning: Many things are undeletable
         - Commits (only by changing Sha1)
         - Pull requests
         - Issues
+
+- Live demo: pull request xarray: typo most -> must
+    xarray/core/alignment.py
+
+- Fix things, rewrite history:
+    - commit --ammend
+    - checkout
+    - reset, reset --hard
+    - git rebase -i HEAD~7
+    - reflog
+    - revert: not!
+    - https://ohshitgit.com/
+
+- rewriting history?
+    - commit
+    - rebase
+    - cherry-pick
+    - fetch
+    - pull
+    - push
 
 - forced push: rewriting history on the remote
     - rewrite history: rebase, git commit --amend
@@ -160,37 +213,60 @@ Intro
     - https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53
     - https://chris.beams.io/posts/git-commit/
 
-- Live demo: pull request xarray: typo most -> must
-    xarray/core/alignment.py
-
 - Excercise: push to Github
     - Clone the workshop repo with --recursive!
     - git-game
+    - run as many commands as possible!
+
+- Exercise:
+    - create a repository (on github)
+    - work in it (commit)
+    - somebody else breaks master (evil commit)
+    - continue working and rebase your work afterwards!
 
 
 11:00 Large files and workflow
 ------------------------------
 
-- folder structure
-    - no cyclic dependencies
-    - README, LICENSE
-    - packages: Make, setup.py
-
 - Complete Workflow:
     - Imagine there are 3-8 developers with an idea
-    - start sitting together and roughly agree on some goals, (project) names,
-      workflow, review
-        - how does a repository look like?
-    - somebody creates one or more repositories and the initial file/folder
-      structure
-    - Build server: tests & packages
+    - start sitting together and roughly agree on some goals, (project) names, workflow, review
 
-- what could go wrong: nothing! (reflog)
-    - merge conflict
+    - folder structure
+        - no cyclic dependencies
+        - README, LICENSE
+        - packages: Make, setup.py
+            - how does a repository look like?
+            - https://github.com/numpy/numpy/
+
+    - somebody creates one or more repositories and the initial file/folder structure
+    - split work in tasks, go agile? :)
+    - different ways:
+        - every body pushes to master, maybe tags from time to time
+        - feature branches & pull request, somebody approves and merges
+
+- Build server: e.g. Travis CI
+    - build packages & run tests (and other tasks?)
+    - https://travis-ci.org/lumbric/lunchbot/branches
+    - https://github.com/lumbric/lunchbot
+
+
+- what could go wrong: nothing!
     - publish private data
     - Github: issues, wiki are not deletable
+    - merge conflicts might be complicated and surprising
+    - start something and end in a weird state (e.g. git rebase)
+        --> ohshitgit
 
 - GIT large files
+    - git lfs
+    - DVC
+    - ...?
+
+What you cannot do with GIT:
+- large files (Github: 100MB, everything is stored forever)
+- mixing public and private branches in one repository, cloning repos partially
+- Jupyter notebooks: nbdime
 
 
 11:45 How git works
@@ -216,14 +292,6 @@ Intro
     - refs
         - HEAD
         - refs/heads
-
-What you cannot do with GIT:
-- large files (Github: 100MB, everything is stored forever)
-- mixing public and private branches in one repository, cloning repos partially
-- Jupyter notebooks
-
-- Branching models
-    - feature branches
 
 - Fun with GIT
     - cycles in history?
