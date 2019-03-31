@@ -1,0 +1,167 @@
+git init
+
+git config --global user.name "My name"
+git config --global user.email "my_mail@mail.org"
+
+git clone git@github.com:pydata/xarray.git
+git clone ../some_test_repo.git
+
+git status
+
+git commit
+git commit -a
+git commit -am 'Fix mean bug in calculation of energy'
+git commit -m 'Clone notebooks to make personal ones'
+
+git add .
+git add analysis_pr.ipynb
+git add figures_and_tables/
+git add -p
+
+git checkout v0.22.0
+git checkout v0.23.0
+git checkout clean
+git checkout -b feature_branch origin/master
+git checkout master
+git checkout origin/master
+
+git checkout figures_and_tables/
+
+git log
+git log --decorate --graph --all --stat --pretty=fuller
+git log --all --author=Regner
+
+git diff analysis_ck.ipynb
+git diff
+git diff --stat
+git diff -w
+git diff --color-words=.
+git diff --cached
+git difftool
+git diff 3bbb31
+git diff 3bb931..HEAD~
+
+git branch
+git branch new_branch
+git branch -D new_branch
+git branch -d new_branch
+
+git merge --abort
+git merge secret
+
+git rebase
+git rebase origin/lebertron-makefile
+
+git cherry-pick --abort
+git cherry-pick d8f8242b0
+
+git fetch
+git fetch origin
+
+git pull
+git pull -r
+git pull -r clean_repo
+
+git push
+git push clean_repo HEAD:master
+git push lumbric
+git push --set-upstream origin master\n
+
+.gitignore
+
+git stash
+git stash apply
+git stash show stash@{0} -p
+git stash save my_foobar
+
+git reflog
+
+git log -G non_existing_country
+git log -G 'window must be non-negative'
+
+git show
+git show 93be7d6c5354
+git show d8fc82c74720210a8c24df364fc07d0604b6a9 | patch -p1
+git show HEAD~
+
+git reset
+git reset --hard HEAD~
+git reset data_download/
+git reset neovim/init.vim
+git reset --hard origin/master
+
+git remote
+git remote add lumbric git@github.com:lumbric/xarray.git
+git remote add origin git@github.com:lumbric/git-games.git
+git remote remove origin
+git remote -v
+
+git rebase -i HEAD~7
+git commit --amend
+git commit backend/ --fixup a18e3fd5e
+
+git revert dc54b83f3f
+
+git branch --contains 40fa7cc9714b8da3a92b5a494879b4fb9ee649
+
+git clean
+git clean -f
+git clean -n
+
+git tag
+git tag v1 -m 'First completely printed version'
+git tag v5 -m 'Two pieces screwed, fix a bug in v4'
+git tag list
+git tag -d v3.50.0
+
+git remote add origin  git@github.com/lumbric/git-games
+
+git rm regional_matching_1.csv
+
+git am  0002-Use-tidyverse-instead-of-openxlsx-for-xlsx-files.patch
+git format-patch HEAD~3
+git format-patch HEAD~2..HEAD
+
+git filter-branch -f --tree-filter "find . -type f -exec sed -i -e 's/MY_PASSWORD/<snip>/g' {} \;"
+
+git grep
+
+git blame config.py
+
+git submodule update --recursive --init
+
+git bisect bad
+git bisect bad aba18
+git bisect abort
+git bisect good
+git bisect reset
+git bisect start
+git bisect visualize
+
+git revert a241d8fa51
+
+git describe --abbrev=0 --match 'v*'
+
+git ls-files
+
+git rebase --autosquash -i HEAD~6
+
+git worktree
+git worktree
+git worktree add
+git worktree add ~/newoekotex-worktree
+git worktree add ../oekotex-leather-worktree
+git worktree add ../oekotex-leather-worktree asp-alternative-design
+git worktree add   /tmp/wt1 HEAD\^1
+git worktree add ../x
+git worktree list
+git worktree prune
+git worktree st
+git worktree --version
+
+git check-ignore
+
+git subtree
+git subtree add
+git subtree add --prefix=./some-path HEAD
+git subtree list
